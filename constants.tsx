@@ -101,7 +101,7 @@ export const TRANSLATIONS: Record<Language, TranslationSchema> = {
 };
 
 export const TAMIL_NADU_DISTRICTS = [
-  "Chennai", "Coimbatore", "Madurai", "Salem", "Trichy", "Tirunelveli", "Erode", "Vellore", "Thoothukudi", "Nagercoil"
+  "Chennai", "Coimbatore", "Madurai", "Salem", "Erode", "Trichy", "Tirunelveli", "Vellore", "Thoothukudi", "Nagercoil"
 ];
 
 export const WATER_SOURCES_BY_DISTRICT: Record<string, string[]> = {
@@ -114,6 +114,8 @@ export const WATER_SOURCES_BY_DISTRICT: Record<string, string[]> = {
 
 export const INITIAL_WATER_DATA: Record<string, any> = {
   "Mettur Dam": {
+    name: "Mettur Dam",
+    district: "Salem",
     ph: 7.2,
     temp: 28,
     turbidity: 3.5,
@@ -123,6 +125,8 @@ export const INITIAL_WATER_DATA: Record<string, any> = {
     location: { lat: 11.7853, lng: 77.8016 }
   },
   "Red Hills Lake": {
+    name: "Red Hills Lake",
+    district: "Chennai",
     ph: 7.0,
     temp: 29,
     turbidity: 2.1,
@@ -130,5 +134,38 @@ export const INITIAL_WATER_DATA: Record<string, any> = {
     lastUpdated: new Date().toLocaleTimeString(),
     sourceType: 'IOT',
     location: { lat: 13.1866, lng: 80.1706 }
+  },
+  "Siruvani Dam": {
+    name: "Siruvani Dam",
+    district: "Coimbatore",
+    ph: 6.8,
+    temp: 24,
+    turbidity: 1.5,
+    tds: 120,
+    lastUpdated: new Date().toLocaleTimeString(),
+    sourceType: 'IOT',
+    location: { lat: 10.9395, lng: 76.6853 }
+  },
+  "Vaigai Dam": {
+    name: "Vaigai Dam",
+    district: "Madurai",
+    ph: 7.5,
+    temp: 31,
+    turbidity: 5.2,
+    tds: 350,
+    lastUpdated: new Date().toLocaleTimeString(),
+    sourceType: 'IOT',
+    location: { lat: 10.0543, lng: 77.5872 }
+  },
+  "Bhavanisagar Dam": {
+    name: "Bhavanisagar Dam",
+    district: "Erode",
+    ph: 7.1,
+    temp: 27,
+    turbidity: 4.0,
+    tds: 220,
+    lastUpdated: new Date().toLocaleTimeString(),
+    sourceType: 'IOT',
+    location: { lat: 11.4721, lng: 77.1292 }
   }
 };

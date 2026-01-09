@@ -2,6 +2,7 @@
   "name": "Smart Water Quality Monitoring & Disease Risk Prediction System",
   "description": "A premium, multilingual dashboard for monitoring water quality, predicting disease risks via AI, and finding nearby water sources across Tamil Nadu.",
   "requestFramePermissions": [
-    "geolocation"
+    "geolocation",
+    "bluetooth"
   ]
 }
